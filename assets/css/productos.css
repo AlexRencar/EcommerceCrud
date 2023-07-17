@@ -1,0 +1,142 @@
+.seccion__productos{
+    background-color: #f5f5f5;
+    padding: 3rem 0;
+}
+
+.star_wars,
+.consolas,
+.diversos{
+    margin: 0 0 2rem 0;
+}
+
+.star_wars__head,
+.consolas__head,
+.diversos__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.star_wars__head__titulo-principal,
+.consolas__head__titulo-principal,
+.diversos__head__titulo-principal{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+.star_wars__head__boton,
+.consolas__head__boton,
+.diversos__head__boton{
+    color: #2A7AE4;
+    font-weight: 800;
+}
+
+.star_wars__head__boton::after,
+.consolas__head__boton::after,
+.diversos__head__boton::after{
+	content: '🡪';
+	color: #2A7AE4;
+    margin-left: .6rem;
+}
+
+.star_wars__productos,
+.consolas__productos,
+.diversos__productos,
+.productos_admin,
+.producto_similares,
+.productos_index{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+/* Estilos Cards de productos*/
+
+.producto__card{
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow:  5px 5px 15px #666666,
+                -5px -5px 15px #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto__card__imagen{
+    height: 55%;
+    width: 74%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.producto__card__titulo,
+.producto__card__precio{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.producto__card__titulo{
+    color: #464646;
+    font-weight: 600;
+    height: 20%;
+}
+
+.producto__card__precio{
+    font-weight: 800;
+    height: 10%;
+}
+
+.producto__card__boton{
+    color: white;
+    font-weight: 800;
+    background: #2A7AE4;
+    height: 15%;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto__card__boton:hover{
+    color: white;
+    background: #092141;
+}
+
+.productos__resultados_mensaje{
+    height: 30vh;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+/* ------------------------------------ */
+/* ----- Responsive para Mobiles ------ */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 767px){
+
+}
+
+/* ------------------------------------ */
+/* ----- Responsive para Tablets ------ */
+/* ------------------------------------ */
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .productos__resultados_mensaje{
+        height: 48vh;
+    }
+
+}
