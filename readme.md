@@ -6,7 +6,7 @@
 </br></br>
 <h2>
 
-[Puedes probarlo aqui!](https://alexrencar.github.io/AluraGeek/)
+[Puedes probarlo aqui!](https://alexrencar.github.io/EcommerceCrud/)
 
 </h2>
 
